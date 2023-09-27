@@ -1,6 +1,6 @@
 <?php
 
-// array_key value show
+// array_key() - value show
 
 $details=['Name'=>"Md Robiul Islam",'Last Name'=>"Robi",'Age'=>"20"];
 
@@ -12,7 +12,7 @@ echo "<br>";
 echo "<br>";
 
 
-// array_combine method in php
+// array_combine()- method in php
 
 $key = ['sector','id','hobbi'];
 $value = ["Web Development","002","Coding"];
@@ -26,7 +26,7 @@ echo "<br>";
 
 
 
-//fill_array  fill an array with value
+//fill_array()- fill an array with value
 
 $fill = array_fill(0,4,"CodeNextIT");
 echo"<h2>fill an array with value</h2>";
@@ -36,7 +36,7 @@ echo "<br>";
 echo "<br>";
 
 
-// array_push adds one or more elements to the end  of an array
+// array_push()- adds one or more elements to the end  of an array
 
 $array_push = ['Imtiaz Vaiyo','Ismail Vai'];
 array_push($array_push, "Rahat","Robi");
