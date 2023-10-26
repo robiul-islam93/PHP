@@ -1,7 +1,8 @@
 <?php
 session_start();
 
-$email = $_POST['email'] ?? "";
+if(isset($_POST['login'])){
+  $email = $_POST['email'] ?? "";
 $password = $_POST['password'] ?? "";
 $fp = fopen("users.txt","r");
 
@@ -21,11 +22,13 @@ for( $i= 0; $i<count($roles); $i++){
 if($email == $emails[$i] && $password == $passwords[$i]){
   $_SESSION["role"] = $roles[$i];
   $_SESSION["email"] = $emails[$i];
-header("Location: Dashbord.php");
+  $_SESSION["password"] = $passwords[$i];
+header("Location: dashbord.php");
 }else{
   $errorMessage = "Invaliad Gmail And Password";
 }
 
+}
 }
 ?>
 

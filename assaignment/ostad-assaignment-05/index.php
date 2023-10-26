@@ -31,9 +31,7 @@
 
     <title>Register Form</title>
   </head>
-  <body style="    background-color: #797979;">
+  <body style="background-color: #797979;">
 
-
-  
 </body>
 </html>

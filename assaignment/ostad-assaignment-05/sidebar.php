@@ -13,7 +13,7 @@
 
     <style>
         .sidebar {
-            height: 55%;
+            height: 50%;
             width: 300px;
             position: fixed;
             top: 0;

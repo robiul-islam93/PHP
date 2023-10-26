@@ -8,7 +8,7 @@ if(!isset($_SESSION['email'])){
 include("sidebar.php");
 
 if($_SESSION["role"] == "admin"){
-  header("Location: admin_Dashboard.php");
+  header("Location: role_management.php");
 }
 
 
