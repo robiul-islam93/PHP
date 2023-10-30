@@ -1,0 +1,32 @@
+{
+    "abc@gmail.com": {
+        "username": "robi.cnits",
+        "email": "abc@gmail.com",
+        "password": "1234567",
+        "role": "admin"
+    },
+    "aladin@gmail.com": {
+        "username": "aladin002",
+        "email": "aladin@gmail.com",
+        "password": "123",
+        "role": ""
+    },
+    "rahul@gmail.com": {
+        "username": "rahul.cnits",
+        "email": "rahul@gmail.com",
+        "password": "1234",
+        "role": ""
+    },
+    "imtiaz@gmail.om": {
+        "username": "imtiaz.cnits",
+        "email": "imtiaz@gmail.om",
+        "password": "123456",
+        "role": ""
+    },
+    "ismail@gmail.com": {
+        "username": "ismail.cnits",
+        "email": "ismail@gmail.com",
+        "password": "1234567",
+        "role": ""
+    }
+}

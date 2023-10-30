@@ -1,5 +1,6 @@
 <?php
 include("link.php");
+include("sidebar.php");
 session_start();
 
 $usersfiles = 'users.json';
@@ -30,6 +31,8 @@ if(isset($_POST['register'])){
             ];
 
             saveusers($users, $usersfiles);
+            header("Location: role_management.php");
+            exit();
         }
     }
 }

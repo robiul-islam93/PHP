@@ -8,12 +8,32 @@
     <title>ostad-assaignment-05</title>
 
 
-    <!-- Include Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- css link -->
+
+
+    <!-- bootstrap link  start-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <!-- bootstrap link end -->
+
+    <!-- boostatrap js link start -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <!-- boostatrap js link end -->
 
     <style>
         .sidebar {
-            height: 50%;
+            height: 40%;
             width: 300px;
             position: fixed;
             top: 0;
@@ -45,8 +65,7 @@
     <!-- Sidebar -->
     <div class="sidebar">
         <h4 class="bg-warning p-4 text-center">Dashbord</h4>
-        <a href="admin_Dashboard.php">Admin Dashboard</a>
-        <a href="user_Dashboard.php">Users Dashboard</a>
+        <a href="role_management.php">Admin Dashboard</a>
 
         <div style="background: #fff; border-radius: 10px;" class="sidenav-footer mx-3 ">
             <a class="btn mt-3 w-100 text-dark" href="logout.php">

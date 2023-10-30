@@ -1,34 +1,27 @@
 <?php
 session_start();
 
-if(isset($_POST['login'])){
-  $email = $_POST['email'] ?? "";
-$password = $_POST['password'] ?? "";
-$fp = fopen("users.txt","r");
+if (isset($_POST['login'])) {
+    $email = $_POST['email'] ?? "";
+    $password = $_POST['password'] ?? "";
+    $fp = fopen("users.json", "r");
 
-$roles = array();
-$emails = array();
-$passwords = array();
+    // Read user data from JSON file
+    $userData = json_decode(fread($fp, filesize("users.json")), true);
+    fclose($fp);
 
-while($line = fgets($fp)){
-  $values = explode(",", $line);
-  array_push($roles, trim($values['0']));
-  array_push($emails, trim($values['1']));
-  array_push($passwords,  trim($values['2']));
-}
-fclose($fp);
+    // Check if the provided email and password match any user
+    foreach ($userData as $user) {
+        if ($email == $user['email'] && $password == $user['password']) {
+            $_SESSION["role"] = $user['role'];
+            $_SESSION["email"] = $user['email'];
+            $_SESSION["password"] = $user['password'];
+            header("Location: dashbord.php");
+            exit(); // Add exit after header to stop further execution
+        }
+    }
 
-for( $i= 0; $i<count($roles); $i++){
-if($email == $emails[$i] && $password == $passwords[$i]){
-  $_SESSION["role"] = $roles[$i];
-  $_SESSION["email"] = $emails[$i];
-  $_SESSION["password"] = $passwords[$i];
-header("Location: dashbord.php");
-}else{
-  $errorMessage = "Invaliad Gmail And Password";
-}
-
-}
+    $errorMessage = "Invalid Email And Password";
 }
 ?>
 
