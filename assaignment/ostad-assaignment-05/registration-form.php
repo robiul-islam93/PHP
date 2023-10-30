@@ -1,5 +1,5 @@
 <?php
-include("link.php");
+include("hedar.php");
 session_start();
 
 $usersfiles = 'users.json';
@@ -25,11 +25,13 @@ if(isset($_POST['register'])){
             $users[$email] = [
                 'username' => $username,
                 'email' => $email,
-                'password' => $password, // Fix the typo here
+                'password' => $password,
                 'role' => ''
             ];
 
             saveusers($users, $usersfiles);
+            $_SESSION['email'] = $email;
+            header("Location: update_user.php");
         }
     }
 }
@@ -53,7 +55,7 @@ if(isset($_POST['register'])){
             <label style="font-size:20px; font-weight: 750;">Password: </label>
             <input type="password" class="form-control" name="password" placeholder="password"><br>
 
-            <input type="hidden" class="form-control" name="role">
+            <input type="hidden" name="role" value="">
 
             <button type="submit" name="register" class="btn btn-primary d-block w-100">Register</button>
         </div>

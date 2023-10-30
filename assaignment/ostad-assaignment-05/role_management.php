@@ -2,13 +2,6 @@
 include('sidebar.php');
 
 
-session_start();
-if (isset($_POST['delete'])) {
-    $deletedRoleIndex = $_POST['deleted_role_index'];
-    // Add validation and delete from the database if needed
-    unset($roles[$deletedRoleIndex]);
-    $roles = array_values($roles); // Re-index the array
-}
 
 ?>
 
@@ -20,10 +13,10 @@ if (isset($_POST['delete'])) {
                 <div class="card-header">
                     <h4>
                         User
-                        <a href="user-registration.php" class="btn btn-primary float-end">Create User</a>
+                        <a href="registration-form.php" class="btn btn-primary float-end">Create User</a>
                     </h4>
                 </div>
-                <div class="card-body">
+                <!-- <div class="card-body">
                     <table class="table table-border table-striped">
                         <thead>
                             <tr>
@@ -40,7 +33,7 @@ if (isset($_POST['delete'])) {
                             </tr>
                         </tbody>
                     </table>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>

@@ -16,9 +16,5 @@ if($_SESSION["role"] == "user"){
   header("Location: login.php");
 }
 
-if($_SESSION["role"] == ""){
-  header("Location: login.php");
-}
-
 
 ?>

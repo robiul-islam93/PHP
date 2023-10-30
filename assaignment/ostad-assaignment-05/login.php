@@ -17,7 +17,6 @@ if (isset($_POST['login'])) {
             $_SESSION["email"] = $user['email'];
             $_SESSION["password"] = $user['password'];
             header("Location: dashbord.php");
-            exit(); // Add exit after header to stop further execution
         }
     }
 
@@ -69,11 +68,13 @@ if (isset($_POST['login'])) {
 <label style="font-size:20px; font-weight: 750;">Password: </label>
 <input type="password" class="form-control" name="password" placeholder="********" required><br>
 
+<input type="hidden" class="form-control" name="role">
+
 <!-- <p class="text-warning">
   echo $errorMessage; 
 </p> -->
 <button type="submit"  name="login" class="btn btn-primary d-block w-100">Login</button>
-<p>Don't have an acoount? <a href="registration-form.php">Registration Now</a></p>
+<p>Don't have an acoount? <a href="user-registration.php">Registration Now</a></p>
 </div>
 </form>
 </div>

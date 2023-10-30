@@ -1,7 +1,6 @@
 <?php
-include("link.php");
-include("sidebar.php");
-session_start();
+include("hedar.php");
+
 
 $usersfiles = 'users.json';
 $users = file_exists($usersfiles) ? json_decode(file_get_contents($usersfiles), true) : [];
@@ -10,7 +9,7 @@ function saveusers($users, $file){
     file_put_contents($file, json_encode($users, JSON_PRETTY_PRINT));
 }
 
-$errorMessage = ''; // Initialize the error message
+$errorMessage = '';
 
 if(isset($_POST['register'])){
     $username = $_POST['username'];
@@ -29,10 +28,6 @@ if(isset($_POST['register'])){
                 'password' => $password, // Fix the typo here
                 'role' => ''
             ];
-
-            saveusers($users, $usersfiles);
-            header("Location: role_management.php");
-            exit();
         }
     }
 }
