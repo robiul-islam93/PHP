@@ -13,7 +13,11 @@ if($_SESSION["role"] == "admin"){
 
 
 if($_SESSION["role"] == "user"){
-  header("Location: login.php");
+  header("Location: user.php");
+}
+
+if($_SESSION["role"] == "manager"){
+  header("Location: manager.php");
 }
 
 

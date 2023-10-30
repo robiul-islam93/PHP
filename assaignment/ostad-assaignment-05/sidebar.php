@@ -33,7 +33,7 @@
 
     <style>
         .sidebar {
-            height: 40%;
+            height: 60%;
             width: 300px;
             position: fixed;
             top: 0;
@@ -65,7 +65,9 @@
     <!-- Sidebar -->
     <div class="sidebar">
         <h4 class="bg-warning p-4 text-center">Dashbord</h4>
-        <a href="role_management.php">Admin Dashboard</a>
+        <a href="role_management.php">Role Managment</a>
+        <a href="user.php">User Dashboard</a>
+        <a href="manager.php">Manager Dashboard</a>
 
         <div style="background: #fff; border-radius: 10px;" class="sidenav-footer mx-3 ">
             <a class="btn mt-3 w-100 text-dark" href="logout.php">

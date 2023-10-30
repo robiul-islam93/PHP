@@ -1,7 +1,7 @@
 {
-    "abc@gmail.com": {
+    "admin@gmail.com": {
         "username": "robi.cnits",
-        "email": "abc@gmail.com",
+        "email": "admin@gmail.com",
         "password": "1234567",
         "role": "admin"
     },
@@ -15,11 +15,12 @@
         "username": "rahul.cnits",
         "email": "rahul.cnits@gmail.com",
         "password": "12345678",
-        "role": "Manager"
+        "role": "manager"
     },
-    "evana@gmail.com": {
-        "username": "evana",
-        "email": "evana@gmail.com",
-        "password": "098765"
+    "ismail@gmail.com": {
+        "username": "ismail.cnits",
+        "email": "ismail@gmail.com",
+        "password": "123",
+        "role": "admin"
     }
 }
