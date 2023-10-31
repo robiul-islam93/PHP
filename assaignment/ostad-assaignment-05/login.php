@@ -74,7 +74,7 @@ if (isset($_POST['login'])) {
   echo $errorMessage; 
 </p> -->
 <button type="submit"  name="login" class="btn btn-primary d-block w-100">Login</button>
-<p>Don't have an acoount? <a href="user-registration.php">Registration Now</a></p>
+<p>Don't have an acoount? <a href="registration-form.php">Registration Now</a></p>
 </div>
 </form>
 </div>

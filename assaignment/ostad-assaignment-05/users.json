@@ -22,5 +22,11 @@
         "email": "ismail@gmail.com",
         "password": "123",
         "role": "admin"
+    },
+    "usersn@gmail.com": {
+        "username": "usersname",
+        "email": "usersn@gmail.com",
+        "password": "1234",
+        "role": ""
     }
 }
