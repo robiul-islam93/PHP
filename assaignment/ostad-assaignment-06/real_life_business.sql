@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 05, 2023 at 01:43 PM
+-- Generation Time: Nov 05, 2023 at 06:06 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -61,7 +61,9 @@ CREATE TABLE `customers` (
 
 INSERT INTO `customers` (`customer_id`, `name`, `email`, `location`) VALUES
 (1, 'Ismail Hossen ', 'ismail@gmail.com', 'kajir hat nariyan'),
-(2, 'Robiul', 'robi@gmail.com', 'califoniya ');
+(2, 'Robiul', 'robi@gmail.com', 'califoniya '),
+(3, 'Imtiaz ', 'imtiaz@gmail.com', 'Bangla Bazar'),
+(4, 'Rahat', 'rahar@gmail.com', 'Bangla Bazar');
 
 -- --------------------------------------------------------
 
@@ -104,7 +106,9 @@ CREATE TABLE `order_items` (
 
 INSERT INTO `order_items` (`order_item_id`, `order_id`, `product_id`, `quantity`, `unit_price`) VALUES
 (1, 2, 1, 223, 5.00),
-(2, 1, 2, 226, 12.00);
+(2, 1, 2, 226, 12.00),
+(3, 2, 2, 230, 12.00),
+(4, 1, 1, 330, 9.00);
 
 -- --------------------------------------------------------
 
@@ -180,7 +184,7 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT for table `customers`
 --
 ALTER TABLE `customers`
-  MODIFY `customer_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `customer_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `orders`
@@ -192,7 +196,7 @@ ALTER TABLE `orders`
 -- AUTO_INCREMENT for table `order_items`
 --
 ALTER TABLE `order_items`
-  MODIFY `order_item_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `order_item_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `products`
