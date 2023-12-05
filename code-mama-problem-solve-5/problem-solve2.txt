@@ -1,0 +1,41 @@
+Build Toy Cars
+বাং
+
+Problem Statement
+Suppose, you work in a toy car workshop, and your job is to build toy cars from a collection of parts. Each toy car needs 4 wheels, 1 car body, and 2 figures of people to be placed inside. Write a program which will calculate how many complete toy cars can be made, given the total number of wheels, car bodies and figures available.
+
+Input
+The input consists of three integers: number of wheels, car bodies, figures.
+
+Output
+The output will print the number of cars.
+
+Constraints
+0 ≤ |S| ≤ 10000
+Example:
+Enter numbers
+
+Input:
+43 15 87
+Output:
+10
+
+
+Answer:
+
+
+<?php
+    # Write your PHP code from here
+    fscanf(STDIN, "%d %d %d", $wheels, $car_body, $figure);
+
+
+    $max_car_from_wheels = floor($wheels / 4);
+    $max_car_from_car_body = floor($car_body / 1);
+    $max_car_from_figure = floor($figure / 2);
+
+  
+    $max_cars = min($max_car_from_wheels, $max_car_from_car_body, $max_car_from_figure);
+
+
+    print $max_cars;
+?>

@@ -1,0 +1,24 @@
+<?php 
+
+class bid{
+    private $minimumacoount = 10;
+    private $bidAcoount;
+
+    public function setAmount($amount){
+        if($amount < $this->minimumacoount){
+            $this->bidAcoount = $this->minimumacoount;
+            return;
+        }
+
+        $this->bidAcoount=$amount;
+    }
+
+    public function getAmount(){
+        return $this->bidAcoount;
+    }
+}
+
+$bidObject = new bid();
+$bidObject -> setAmount(15);
+
+print $bidObject->getAmount();
